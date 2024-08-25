@@ -18,7 +18,7 @@ export default function WelcomeScreen() {
   return (
     <View className="flex-1 justify-center items-center bg-blue-500">
       <StatusBar style="light" />
-      <ImageBackground source={{ uri:"https://img.freepik.com/free-photo/portrait-handsome-man-grey-shirt-with-photocamera-press-badge-taking-pictures-dark-wall_176420-3443.jpg?ga=GA1.1.336393694.1724476993&semt=ais_hybrid" }} resizeMode="cover" style={{ flex: 1, justifyContent: "center" }} className="w-full">
+      <ImageBackground source={require("../../assets/welcome.png")} resizeMode="cover" style={{ flex: 1, justifyContent: "center" }} className="w-full">
 
       <Animated.View entering={FadeIn.delay(250)} className="flex justify-center items-center h-screen px-4">
         <Text
